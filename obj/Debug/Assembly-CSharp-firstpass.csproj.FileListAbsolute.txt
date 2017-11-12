@@ -94,3 +94,35 @@ H:\Documents\Game Jam\GameJam-November-2017\Temp\bin\Debug\UnityEngine.HoloLens.
 H:\Documents\Game Jam\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 H:\Documents\Game Jam\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.dll
 H:\Documents\Game Jam\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.pdb
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Assembly-CSharp-firstpass.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\nunit.framework.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEditor.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Analytics.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.HoloLens.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Networking.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.TestRunner.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Timeline.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.UI.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Mono.Cecil.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Unity.SerializationLogic.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Unity.DataContract.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\ExCSS.Unity.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Unity.Legacy.NRefactory.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Unity.UNetWeaver.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Unity.CecilTools.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Mono.Cecil.Pdb.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\Mono.Cecil.Mdb.dll
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEditor.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.UI.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Networking.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.TestRunner.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\nunit.framework.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Timeline.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.Analytics.xml
+H:\Documents\GitHub\GameJam-November-2017\Temp\bin\Debug\UnityEngine.HoloLens.xml
+H:\Documents\GitHub\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
+H:\Documents\GitHub\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.dll
+H:\Documents\GitHub\GameJam-November-2017\obj\Debug\Assembly-CSharp-firstpass.pdb
