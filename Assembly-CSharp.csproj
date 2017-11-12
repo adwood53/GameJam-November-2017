@@ -53,13 +53,19 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\CharacterPickup.cs" />
      <Compile Include="Assets\Scripts\ColliderTrigger.cs" />
+     <Compile Include="Assets\Scripts\DetectObjects.cs" />
+     <Compile Include="Assets\Scripts\LineBeam.cs" />
      <Compile Include="Assets\Scripts\PickUp.cs" />
      <Compile Include="Assets\Scripts\Pickupable.cs" />
      <Compile Include="Assets\Scripts\SpawnClone.cs" />
+     <Compile Include="Assets\Scripts\Turret.cs" />
+     <Compile Include="Assets\Scripts\TurretTarget.cs" />
+     <Compile Include="Assets\Scripts\WeightObject.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
+     <None Include="Assets\FreeTurretScript\readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/SA/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
