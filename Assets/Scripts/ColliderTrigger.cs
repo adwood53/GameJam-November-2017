@@ -8,6 +8,7 @@ public class ColliderTrigger : MonoBehaviour {
 	public bool InRangeOfItem = false;
 	public bool PickupAvailable = false;
 	[SerializeField] private bool carrying = false;
+	private bool lockControl = false;
 	[SerializeField] private Transform pickUpPoint;
 
 	void start() {
@@ -31,12 +32,42 @@ public class ColliderTrigger : MonoBehaviour {
 	}
 
 	void Update() {
-		if (PickupAvailable) {
-			if (Input.GetKeyDown (KeyCode.E)) {
-				objectDetected.transform.position = pickUpPoint.position;
-				objectDetected.transform.SetParent (pickUpPoint);
+		if (Input.GetKeyDown (KeyCode.E) && objectDetected != null) {
+			if (PickupAvailable && !carrying) {
 				objectDetected.GetComponent<Rigidbody> ().isKinematic = true;
-				objectDetected.GetComponent<CapsuleCollider> ().enabled = false;
+				objectDetected.GetComponent<BoxCollider> ().enabled = false;
+				objectDetected.GetComponent<SphereCollider> ().enabled = false;
+				objectDetected.transform.SetParent (pickUpPoint);
+				objectDetected.transform.localPosition = new Vector3(-0.5f, 0, 0);
+				objectDetected.transform.localRotation = Quaternion.Euler(new Vector3(-90,-90,0));
+				lockControl = false;
+			}
+			if(carrying){
+				pickUpPoint.transform.DetachChildren();
+				objectDetected.GetComponent<Rigidbody> ().isKinematic = false;
+				objectDetected.GetComponent<BoxCollider> ().enabled = true;
+				objectDetected.GetComponent<SphereCollider> ().enabled = true;
+				lockControl = false;
+			}
+		}
+		if (Input.GetKeyDown (KeyCode.Q)) {
+			if(carrying){
+				pickUpPoint.transform.DetachChildren();
+				objectDetected.GetComponent<Rigidbody> ().isKinematic = false;
+				objectDetected.GetComponent<Rigidbody> ().velocity = (transform.forward * 10) + (transform.up * 8);
+				objectDetected.GetComponent<BoxCollider> ().enabled = true;
+				objectDetected.GetComponent<SphereCollider> ().enabled = true;
+				lockControl = false;
+			}
+		}
+		if (Input.GetKeyUp (KeyCode.E)) {
+			if (!carrying && !lockControl) {
+				carrying = true;
+				lockControl = true;
+			}
+			if (carrying && !lockControl) {
+				carrying = false;
+				lockControl = true;
 			}
 		}
 	}

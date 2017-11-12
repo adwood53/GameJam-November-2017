@@ -9,14 +9,16 @@ public class SpawnClone : MonoBehaviour {
 	[SerializeField] private int spawnLimit = 3;
 	private GameObject Clone;
 	private int spawnCounter = 0;
-
-
+	[SerializeField] bool PlayerNear;
+		
 	void Update () {
 		
 
-		if(Input.GetKeyDown(KeyCode.Space)){
-			Spawn ();
-			spawnCounter++;
+		if(Input.GetKeyDown(KeyCode.F)) {
+			if (PlayerNear  == true) {
+				Spawn ();
+				spawnCounter++;
+			}
 		}
 	}
 
@@ -26,5 +28,20 @@ public class SpawnClone : MonoBehaviour {
 		}
 	}
 
+	void OnTriggerEnter (Collider Col) {
+
+		if (Col.gameObject.name == "Player") {
+			PlayerNear = true;
+			Debug.Log (Col.gameObject.name);
+		}
+	}
+	
+	void OnTriggerExit(Collider ColExit) {
+
+		if (ColExit.gameObject.name == "Player") {
+			PlayerNear = false;
+			Debug.Log ("asf");
+		}
+		}
 }
 
