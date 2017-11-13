@@ -404,6 +404,7 @@ GameObject:
   - component: {fileID: 114539597600823554}
   - component: {fileID: 65687813802466290}
   - component: {fileID: 135237274423734668}
+  - component: {fileID: 114874324505131808}
   m_Layer: 0
   m_Name: mod_clone03
   m_TagString: Clone
@@ -466,6 +467,22 @@ GameObject:
   - component: {fileID: 4551698133516482}
   m_Layer: 0
   m_Name: Bip001 Footsteps
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1986311868130692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4678720549659684}
+  - component: {fileID: 122714853822643194}
+  m_Layer: 0
+  m_Name: Halo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -720,6 +737,19 @@ Transform:
   m_Father: {fileID: 4087647131573088}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4678720549659684
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986311868130692}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4835332401545702}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4683280012243236
 Transform:
   m_ObjectHideFlags: 1
@@ -820,6 +850,7 @@ Transform:
   - {fileID: 4289401940594826}
   - {fileID: 4947389857496230}
   - {fileID: 4985184739670818}
+  - {fileID: 4678720549659684}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -970,6 +1001,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   priority: 1
+--- !u!114 &114874324505131808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1874397842290236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633fe5efbfe918845ad4d12984733b98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  halo: {fileID: 1986311868130692}
+--- !u!122 &122714853822643194
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1986311868130692}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281138944
+  m_Size: 0.81
 --- !u!135 &135237274423734668
 SphereCollider:
   m_ObjectHideFlags: 1

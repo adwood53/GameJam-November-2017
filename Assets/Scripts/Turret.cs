@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Turret : MonoBehaviour
 {
 
@@ -76,9 +76,9 @@ public class Turret : MonoBehaviour
 			if (Physics.Raycast(emitter.position, emitter.forward, out hit, range))
 			{
 				GameObject h = hit.collider.gameObject;
-				if (h.tag == "Player"  || h.tag == "Clone") {
+				if (h.tag == "Player") {
 					Debug.Log ("OW! " + h.name);
-					h.SetActive (false);
+					SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 				}
 			}
         }

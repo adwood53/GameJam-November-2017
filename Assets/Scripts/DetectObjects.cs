@@ -8,6 +8,7 @@ public class DetectObjects : MonoBehaviour {
 	[SerializeField] private Transform button;
 	private Transform startPos;
 	private Transform pushedPos;
+	public bool Success = false;
 	private int total = 0;
 
 
@@ -17,7 +18,7 @@ public class DetectObjects : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider col){
-		Debug.Log ("Name: " + col.tag);
+		//Debug.Log ("Name: " + col.tag);
 		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Clone") {
 			total += col.gameObject.GetComponent<WeightObject> ().getWeight ();
 			Debug.Log ("Total: " + total);
@@ -25,7 +26,7 @@ public class DetectObjects : MonoBehaviour {
 	}
 
 	void OnTriggerExit(Collider col){
-		Debug.Log ("Name: " + col.tag);
+		//Debug.Log ("Name: " + col.tag);
 		if (col.gameObject.tag == "Player" || col.gameObject.tag == "Clone") {
 			total -= col.gameObject.GetComponent<WeightObject> ().getWeight ();
 			Debug.Log ("Total: " + total);
@@ -35,11 +36,11 @@ public class DetectObjects : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (total >= limit) {
-			Debug.Log ("FULL NOW!");
+			Success = true;
 			button.localPosition = new Vector3(button.localPosition.x, button.localPosition.y, 0);
 		} else {
 			button.localPosition = new Vector3(button.localPosition.x, button.localPosition.y, 0.084f);
-			Debug.Log ("Empty Again!");
+			Success = false;
 		}
 	}
 }
