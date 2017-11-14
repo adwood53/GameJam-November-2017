@@ -50,12 +50,13 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 538eb67a5d8939840b74458be76d3a8a, type: 2}
-  - {fileID: 2100000, guid: 9f425f8522b8d2f4489193da4ef32b2c, type: 2}
+  - {fileID: 2100000, guid: d004a095c06cd8d48b5315cb7953b20f, type: 2}
+  - {fileID: 2100000, guid: 290965f13cb8a004fa2b8b8d08a87b5c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -66,6 +67,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5

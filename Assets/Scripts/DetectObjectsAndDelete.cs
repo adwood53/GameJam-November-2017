@@ -5,6 +5,7 @@ using UnityEngine;
 public class DetectObjectsAndDelete : MonoBehaviour {
 
 	[SerializeField] private int limit = 1;
+    [SerializeField] private Animation anim;
 	public bool Success = false;
 	private int total = 0;
 
@@ -21,7 +22,8 @@ public class DetectObjectsAndDelete : MonoBehaviour {
 	void Update () {
 		if (total >= limit) {
 			Success = true;
-		} else {
+            anim.Stop();
+        } else {
 			Success = false;
 		}
 	}
