@@ -49,15 +49,20 @@ public class ColliderTrigger : MonoBehaviour {
 				objectCarried = objectDetected;
 				lockControl = false;
 			}
-			if(carrying){
-				pickUpPoint.transform.DetachChildren();
-				objectDetected.GetComponent<Rigidbody> ().isKinematic = false;
-				objectDetected.GetComponent<BoxCollider> ().enabled = true;
-				objectDetected.GetComponent<SphereCollider> ().enabled = true;
-				lockControl = false;
-			}
 		}
-		if (Input.GetKeyDown (KeyCode.Q)) {
+	    if (Input.GetKeyDown(KeyCode.E) && objectCarried != null)
+	    {
+	        if (carrying)
+	        {
+	            pickUpPoint.transform.DetachChildren();
+	            objectCarried.GetComponent<Rigidbody>().isKinematic = false;
+	            objectCarried.GetComponent<BoxCollider>().enabled = true;
+	            objectCarried.GetComponent<SphereCollider>().enabled = true;
+	            objectCarried = null;
+	            lockControl = false;
+	        }
+	    }
+        if (Input.GetKeyDown (KeyCode.Q)) {
 			if(carrying){
 				
 				objectCarried.GetComponent<Rigidbody> ().isKinematic = false;
@@ -65,7 +70,8 @@ public class ColliderTrigger : MonoBehaviour {
 				objectCarried.GetComponent<BoxCollider> ().enabled = true;
 				objectCarried.GetComponent<SphereCollider> ().enabled = true;
 				pickUpPoint.transform.DetachChildren();
-				lockControl = false;
+			    objectCarried = null;
+                lockControl = false;
 			}
 		}
 		if (Input.GetKeyUp (KeyCode.E)) {
